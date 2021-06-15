@@ -1,2 +1,24 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- 轮播图组件 -->
+<m-swiper list="{{banners}}"/>
+<!-- 推荐组件 -->
+<m-recommend list="{{recommends}}" bind:recimgLoad="recImgLoad"/>
+<!-- 本周流行 -->
+<view class="popular">
+	<image src="/assets/home/recommend_bg.jpg" mode="widthFix"></image>
+</view>
+
+<!-- tab切换组件 -->
+<m-tab-control list="{{titles}}"
+								bind:tabClick="handleTabClick"
+								id="tab-control"
+								class="{{isShowtc ? 'fixed' : ''}}"/>
+<m-tab-control list="{{titles}}"
+								id="tab-control"
+								wx:if="{{isShowtc}}"/>
+
+<!-- 商品展示组件 -->
+<m-goods-list glist="{{goods[currentType].list}}" />
+
+<!-- 回到顶部组件 -->
+<m-back-top wx:if="{{isShowbt}}" />

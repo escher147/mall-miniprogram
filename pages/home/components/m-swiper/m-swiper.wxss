@@ -1,0 +1,8 @@
+/* pages/home/components/m-swiper.wxss */
+	.swiper {
+		height: 360rpx;
+	}
+	.sw-img{
+		width: 100%;
+		height: 360rpx;
+	}

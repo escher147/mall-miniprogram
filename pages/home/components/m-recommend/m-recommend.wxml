@@ -1,0 +1,11 @@
+<!--pages/home/components/m-recommend/m-recommend.wxml-->
+<view class="recommend">
+	<block wx:for="{{list}}" wx:key="index">
+		<view class="recommend-item">
+			<image src="{{item.image}}" 
+						 class="rec-img"
+						 bind:load="recimgLoad"	></image>
+			<view>{{item.title}}</view>
+		</view>
+	</block>
+</view>

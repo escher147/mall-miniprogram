@@ -1,0 +1,10 @@
+<!--components/m-goods-item/m-goods-item.wxml-->
+<view class="goods-item">
+	<image src="{{gitem.show.img}}" class="item-img"></image>
+	<view class="goods-info">
+		<view class="item-title">{{gitem.title}}</view>
+		<text class="price">￥{{gitem.price}}</text>
+		<image src="/assets/common/favor.png" class="cfav-img"></image>
+		<text class="cfav">{{gitem.cfav}}</text>
+	</view>
+</view>

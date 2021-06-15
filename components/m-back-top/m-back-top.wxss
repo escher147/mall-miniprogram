@@ -1,0 +1,10 @@
+/* components/m-back-top/m-back-top.wxss */
+	.back-top {
+		position: fixed;
+		right: 30rpx;
+		bottom: 30rpx;
+	}
+	.bt-img {
+		width: 100rpx;
+		height: 100rpx;
+	}

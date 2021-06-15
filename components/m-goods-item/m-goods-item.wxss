@@ -1,0 +1,38 @@
+/* components/m-goods-item/m-goods-item.wxss */
+.goods-item {
+	position: relative;
+	padding-bottom: 100rpx;
+}
+.goods-item .item-img {
+	width: 100%;
+	border-radius: 10rpx;
+}
+.goods-info {
+	position: absolute;   
+	left: 0;
+	right: 0;
+	bottom: 10rpx;
+	font-size: 28rpx;
+	padding: 6rpx;
+}
+.goods-info .item-title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-bottom: 6rpx;
+
+}
+ .goods-info .price {
+	color: #ff5777;
+	margin-right: 50rpx;
+}
+ .goods-info .cfav {
+	position: relative;
+}
+ .cfav-img {
+  position: relative;
+	width: 30rpx;
+  height: 30rpx;
+  padding: 0 6rpx 0 10rpx;
+	top:4rpx;
+ }

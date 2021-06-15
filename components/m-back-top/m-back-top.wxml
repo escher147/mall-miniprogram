@@ -1,0 +1,4 @@
+<!--components/m-back-top/m-back-top.wxml-->
+<view class="back-top" bind:tap="backTopTap">
+	<image src="/assets/common/top.png" class="bt-img"></image>
+</view>
